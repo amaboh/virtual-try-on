@@ -41,9 +41,9 @@ mp_face_mesh = mp.solutions.face_mesh
 face_mesh = mp_face_mesh.FaceMesh(static_image_mode=True, max_num_faces=1, min_detection_confidence=0.5)
 
 # Streamlit UI
-st.set_page_config(page_title="Virtual Lipstick Try-On", layout="wide")
+st.set_page_config(page_title="Virtual Lip depigmentation Try-On", layout="wide")
 
-st.title("Virtual Lipstick Try-On")
+st.title("Virtual Lip depigmentation Try-On")
 st.write("Upload a photo and try different lipstick colors!")
 
 # Predefined color gradients
@@ -98,7 +98,7 @@ if uploaded_file is not None:
         st.image(image_rgb)
     
     with col2:
-        st.subheader("With Lipstick")
+        st.subheader("With Lip Depigmentation color")
         if results.multi_face_landmarks:
             for face_landmarks in results.multi_face_landmarks:
                 result = apply_lipstick(image, face_landmarks.landmark, selected_color, intensity)
