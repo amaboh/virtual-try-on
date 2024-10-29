@@ -1,10 +1,14 @@
+import os
+
+# Install required system packages
+os.system('apt-get update && apt-get install -y libgl1-mesa-glx libglib2.0-0 libsm6 libxext6 libxrender-dev')
+
+# Rest of your imports
 import streamlit as st
 import cv2
 import mediapipe as mp
 import numpy as np
 from PIL import Image
-import io
-
 def hex_to_bgr(hex_color):
     hex_color = hex_color.lstrip('#')
     return tuple(int(hex_color[i:i+2], 16) for i in (4, 2, 0))
