@@ -37,10 +37,10 @@ mp_face_mesh = mp.solutions.face_mesh
 face_mesh = mp_face_mesh.FaceMesh(static_image_mode=True, max_num_faces=1, min_detection_confidence=0.5)
 
 # Streamlit UI
-st.set_page_config(page_title="Virtual Lipstick Try-On", layout="wide")
+st.set_page_config(page_title="Virtual Lip Depigmentation Try-On", layout="wide")
 
 st.title("Virtual Lipstick Try-On")
-st.write("Upload a photo and try different lipstick colors!")
+st.write("Upload a photo and try different lip skin color!")
 
 # Predefined color gradients
 color_gradients = {
