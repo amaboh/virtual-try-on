@@ -1,5 +1,5 @@
-streamlit
+streamlit==1.39.0
 opencv-python-headless==4.8.1.78
-mediapipe
-numpy
-Pillow
+mediapipe==0.10.8
+numpy==1.24.3
+Pillow==9.5.0
