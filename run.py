@@ -1,6 +1,6 @@
 import streamlit as st
 # Configure Streamlit page
-st.set_page_config(page_title="Virtual Depigmentation Try-On", layout="wide")
+st.set_page_config(page_title="Virtual Lipstick Try-On", layout="wide")
 
 # Import other libraries after Streamlit configuration
 try:
@@ -16,6 +16,7 @@ import mediapipe as mp
 import numpy as np
 from PIL import Image
 import io
+
 
 
 def hex_to_bgr(hex_color):
