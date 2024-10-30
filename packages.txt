@@ -1,1 +1,5 @@
+cmake
+libpng-dev
+libfreetype6-dev
+pkg-config
 build-essential
